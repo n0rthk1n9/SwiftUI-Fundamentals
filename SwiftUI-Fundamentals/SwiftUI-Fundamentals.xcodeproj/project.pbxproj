@@ -11,6 +11,9 @@
 		57F5CA452ACAF3FC0050C73C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA442ACAF3FC0050C73C /* ContentView.swift */; };
 		57F5CA472ACAF3FE0050C73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F5CA462ACAF3FE0050C73C /* Assets.xcassets */; };
 		57F5CA4A2ACAF3FE0050C73C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F5CA492ACAF3FE0050C73C /* Preview Assets.xcassets */; };
+		57F5CA512ACAF6D20050C73C /* ModifiersChallenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA502ACAF6D20050C73C /* ModifiersChallenge1.swift */; };
+		57F5CA542ACAF8000050C73C /* ModifiersChallenge2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */; };
+		57F5CA572ACAFD310050C73C /* StateAndBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA562ACAFD310050C73C /* StateAndBinding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		57F5CA442ACAF3FC0050C73C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57F5CA462ACAF3FE0050C73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57F5CA492ACAF3FE0050C73C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57F5CA502ACAF6D20050C73C /* ModifiersChallenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiersChallenge1.swift; sourceTree = "<group>"; };
+		57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiersChallenge2.swift; sourceTree = "<group>"; };
+		57F5CA562ACAFD310050C73C /* StateAndBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndBinding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		57F5CA412ACAF3FC0050C73C /* SwiftUI-Fundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				57F5CA552ACAFD110050C73C /* Learn */,
+				57F5CA522ACAF6E20050C73C /* Challenges */,
 				57F5CA422ACAF3FC0050C73C /* SwiftUI_FundamentalsApp.swift */,
 				57F5CA442ACAF3FC0050C73C /* ContentView.swift */,
 				57F5CA462ACAF3FE0050C73C /* Assets.xcassets */,
@@ -65,6 +73,23 @@
 				57F5CA492ACAF3FE0050C73C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57F5CA522ACAF6E20050C73C /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				57F5CA502ACAF6D20050C73C /* ModifiersChallenge1.swift */,
+				57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		57F5CA552ACAFD110050C73C /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				57F5CA562ACAFD310050C73C /* StateAndBinding.swift */,
+			);
+			path = Learn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F5CA572ACAFD310050C73C /* StateAndBinding.swift in Sources */,
 				57F5CA452ACAF3FC0050C73C /* ContentView.swift in Sources */,
+				57F5CA512ACAF6D20050C73C /* ModifiersChallenge1.swift in Sources */,
 				57F5CA432ACAF3FC0050C73C /* SwiftUI_FundamentalsApp.swift in Sources */,
+				57F5CA542ACAF8000050C73C /* ModifiersChallenge2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
