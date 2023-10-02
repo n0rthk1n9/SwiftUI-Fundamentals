@@ -19,6 +19,7 @@
 		57F5CA5D2ACB0B420050C73C /* RepeatViewsForEachList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA5C2ACB0B420050C73C /* RepeatViewsForEachList.swift */; };
 		57F5CA602ACB0B8C0050C73C /* MeowMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA5F2ACB0B8C0050C73C /* MeowMix.swift */; };
 		57F5CA622ACB0BB50050C73C /* MeowMixHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA612ACB0BB50050C73C /* MeowMixHeader.swift */; };
+		57F5CA642ACB112E0050C73C /* StacksChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA632ACB112E0050C73C /* StacksChallenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		57F5CA5C2ACB0B420050C73C /* RepeatViewsForEachList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatViewsForEachList.swift; sourceTree = "<group>"; };
 		57F5CA5F2ACB0B8C0050C73C /* MeowMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowMix.swift; sourceTree = "<group>"; };
 		57F5CA612ACB0BB50050C73C /* MeowMixHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowMixHeader.swift; sourceTree = "<group>"; };
+		57F5CA632ACB112E0050C73C /* StacksChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksChallenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				57F5CA502ACAF6D20050C73C /* ModifiersChallenge1.swift */,
 				57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */,
 				57F5CA582ACB00630050C73C /* StateAndBindingChallenge.swift */,
+				57F5CA632ACB112E0050C73C /* StacksChallenge.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F5CA642ACB112E0050C73C /* StacksChallenge.swift in Sources */,
 				57F5CA602ACB0B8C0050C73C /* MeowMix.swift in Sources */,
 				57F5CA572ACAFD310050C73C /* StateAndBinding.swift in Sources */,
 				57F5CA452ACAF3FC0050C73C /* ContentView.swift in Sources */,
