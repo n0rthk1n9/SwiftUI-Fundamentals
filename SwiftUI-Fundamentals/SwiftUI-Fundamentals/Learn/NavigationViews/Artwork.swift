@@ -20,7 +20,17 @@ struct Artwork {
     var reaction: String
 
     func load() {
-        print(">>>>> Downloading \(self.imageName) <<<<<")
+        print(">>>>> Downloading \(imageName) <<<<<")
+    }
+}
+
+extension Artwork: Hashable, Equatable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func ==(lhs: Artwork, rhs: Artwork) -> Bool {
+        return lhs.id == rhs.id && lhs.title == rhs.title
     }
 }
 
