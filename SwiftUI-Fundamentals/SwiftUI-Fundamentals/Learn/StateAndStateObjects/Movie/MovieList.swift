@@ -11,7 +11,7 @@ struct MovieList: View {
     @StateObject var movieStore = MovieStore()
     @State private var isPresented = false
     @State private var isLookAndFeelPresented = false
-    @ObservedObject var userStore = UserStore()
+    @EnvironmentObject var userStore: UserStore
     @ObservedObject var lookAndFeelStore = LookAndFeelStore()
 
     var body: some View {
@@ -31,7 +31,7 @@ struct MovieList: View {
             .navigationBarTitle(Text("Fave Flicks"))
             .navigationBarItems(
                 leading:
-                NavigationLink(destination: UserView(userStore: userStore)) {
+                NavigationLink(destination: UserView()) {
                     HStack {
                         Text(userStore.currentUserInfo.userName)
                         Image(systemName: "person.fill")
@@ -55,5 +55,6 @@ struct MovieList: View {
 struct MovieList_Previews: PreviewProvider {
     static var previews: some View {
         MovieList(movieStore: MovieStore())
+            .environmentObject(UserStore())
     }
 }

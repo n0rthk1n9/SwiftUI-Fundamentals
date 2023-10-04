@@ -197,12 +197,12 @@
 		57F5CA522ACAF6E20050C73C /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
-				572253142ACDFD0400807BE3 /* StateObjectAndObservableObjectChallenge */,
 				57F5CA502ACAF6D20050C73C /* ModifiersChallenge1.swift */,
 				57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */,
 				57F5CA582ACB00630050C73C /* StateAndBindingChallenge.swift */,
 				57F5CA632ACB112E0050C73C /* StacksChallenge.swift */,
 				572252FB2ACDF47C00807BE3 /* NavigationAndBindingsChallenge.swift */,
+				572253142ACDFD0400807BE3 /* StateObjectAndObservableObjectChallenge */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";

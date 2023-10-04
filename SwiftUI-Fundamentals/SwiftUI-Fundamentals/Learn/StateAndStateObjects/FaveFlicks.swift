@@ -10,6 +10,7 @@ import SwiftUI
 struct FaveFlicks: View {
     var body: some View {
         MovieList()
+            .environmentObject(UserStore())
     }
 }
 

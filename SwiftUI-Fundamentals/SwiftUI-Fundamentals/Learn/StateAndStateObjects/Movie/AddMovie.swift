@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddMovie: View {
     @ObservedObject var lookAndFeelStore: LookAndFeelStore
+    @EnvironmentObject var userStore: UserStore
     static let defaultMovieTitle = "An untitled masterpiece"
 
     let movieStore: MovieStore
@@ -38,6 +39,9 @@ struct AddMovie: View {
                     Text("Add")
                 }
             )
+        }
+        .onAppear {
+            genre = userStore.currentUserInfo.favoriteGenre
         }
     }
 
