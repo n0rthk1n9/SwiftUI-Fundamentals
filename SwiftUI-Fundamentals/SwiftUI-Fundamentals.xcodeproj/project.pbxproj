@@ -19,6 +19,8 @@
 		5722530F2ACDF9BF00807BE3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722530E2ACDF9BF00807BE3 /* RatingView.swift */; };
 		572253112ACDF9DD00807BE3 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572253102ACDF9DD00807BE3 /* UserStore.swift */; };
 		572253132ACDF9FC00807BE3 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572253122ACDF9FC00807BE3 /* UserView.swift */; };
+		572253172ACDFD2700807BE3 /* LookAndFeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572253162ACDFD2700807BE3 /* LookAndFeelView.swift */; };
+		572253192ACDFD4A00807BE3 /* LookAndFeelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572253182ACDFD4A00807BE3 /* LookAndFeelStore.swift */; };
 		57420A0D2ACDED7C00E27703 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A0C2ACDED7C00E27703 /* NavigationViews.swift */; };
 		57420A0F2ACDEDB400E27703 /* LocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A0E2ACDEDB400E27703 /* LocationMap.swift */; };
 		57420A122ACDEDD700E27703 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A112ACDEDD700E27703 /* DetailView.swift */; };
@@ -52,6 +54,8 @@
 		5722530E2ACDF9BF00807BE3 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		572253102ACDF9DD00807BE3 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		572253122ACDF9FC00807BE3 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		572253162ACDFD2700807BE3 /* LookAndFeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookAndFeelView.swift; sourceTree = "<group>"; };
+		572253182ACDFD4A00807BE3 /* LookAndFeelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookAndFeelStore.swift; sourceTree = "<group>"; };
 		57420A0C2ACDED7C00E27703 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
 		57420A0E2ACDEDB400E27703 /* LocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMap.swift; sourceTree = "<group>"; };
 		57420A112ACDEDD700E27703 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,23 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		572253142ACDFD0400807BE3 /* StateObjectAndObservableObjectChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				572253152ACDFD1800807BE3 /* LookAndFeel */,
+			);
+			path = StateObjectAndObservableObjectChallenge;
+			sourceTree = "<group>";
+		};
+		572253152ACDFD1800807BE3 /* LookAndFeel */ = {
+			isa = PBXGroup;
+			children = (
+				572253162ACDFD2700807BE3 /* LookAndFeelView.swift */,
+				572253182ACDFD4A00807BE3 /* LookAndFeelStore.swift */,
+			);
+			path = LookAndFeel;
+			sourceTree = "<group>";
+		};
 		57420A0B2ACDED6900E27703 /* NavigationViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +197,7 @@
 		57F5CA522ACAF6E20050C73C /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				572253142ACDFD0400807BE3 /* StateObjectAndObservableObjectChallenge */,
 				57F5CA502ACAF6D20050C73C /* ModifiersChallenge1.swift */,
 				57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */,
 				57F5CA582ACB00630050C73C /* StateAndBindingChallenge.swift */,
@@ -279,10 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572253192ACDFD4A00807BE3 /* LookAndFeelStore.swift in Sources */,
 				572253072ACDF95200807BE3 /* Movie.swift in Sources */,
 				5722530B2ACDF98400807BE3 /* MovieRow.swift in Sources */,
 				572252FA2ACDF21000807BE3 /* ModalViews.swift in Sources */,
 				57F5CA642ACB112E0050C73C /* StacksChallenge.swift in Sources */,
+				572253172ACDFD2700807BE3 /* LookAndFeelView.swift in Sources */,
 				572252FF2ACDF8EB00807BE3 /* FaveFlicks.swift in Sources */,
 				57F5CA602ACB0B8C0050C73C /* MeowMix.swift in Sources */,
 				57F5CA572ACAFD310050C73C /* StateAndBinding.swift in Sources */,

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RatingView: View {
+    @ObservedObject var lookAndFeelStore: LookAndFeelStore
+
     let rating: Double
 
     var fullStarCount: Int {
@@ -21,10 +23,10 @@ struct RatingView: View {
     var body: some View {
         HStack {
             ForEach(0 ..< fullStarCount, id: \.self) { _ in
-                Image(systemName: "star.fill")
+                Image(systemName: "\(lookAndFeelStore.currentLookAndFeel.symbolName).fill")
             }
             if hasHalfStar {
-                Image(systemName: "star.lefthalf.fill")
+                Image(systemName: "\(lookAndFeelStore.currentLookAndFeel.symbolName).lefthalf.fill")
             }
         }
         .foregroundColor(.accentColor)
@@ -33,6 +35,6 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView(rating: 4.5)
+        RatingView(lookAndFeelStore: LookAndFeelStore(), rating: 4.5)
     }
 }

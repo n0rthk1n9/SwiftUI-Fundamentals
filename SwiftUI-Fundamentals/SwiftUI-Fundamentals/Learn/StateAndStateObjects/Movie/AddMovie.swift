@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddMovie: View {
+    @ObservedObject var lookAndFeelStore: LookAndFeelStore
     static let defaultMovieTitle = "An untitled masterpiece"
 
     let movieStore: MovieStore
@@ -24,7 +25,7 @@ struct AddMovie: View {
                 }
                 Section(header: Text("Rating")) {
                     Slider(value: $rating, in: 0 ... 5, step: 0.5)
-                    RatingView(rating: rating)
+                    RatingView(lookAndFeelStore: lookAndFeelStore, rating: rating)
                 }
                 Section(header: Text("Genre")) {
                     GenrePicker(genre: $genre)

@@ -10,19 +10,24 @@ import SwiftUI
 struct MovieList: View {
     @StateObject var movieStore = MovieStore()
     @State private var isPresented = false
+    @State private var isLookAndFeelPresented = false
     @ObservedObject var userStore = UserStore()
+    @ObservedObject var lookAndFeelStore = LookAndFeelStore()
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(movieStore.movies, id: \.title) {
-                    MovieRow(movie: $0)
+                    MovieRow(lookAndFeelStore: lookAndFeelStore, movie: $0)
                 }
                 .onDelete(perform: movieStore.deleteMovie)
             }
             .sheet(isPresented: $isPresented) {
-                AddMovie(movieStore: movieStore, showModal: $isPresented)
+                AddMovie(lookAndFeelStore: lookAndFeelStore, movieStore: movieStore, showModal: $isPresented)
             }
+            .sheet(isPresented: $isLookAndFeelPresented, content: {
+                LookAndFeelView(lookAndFeelStore: lookAndFeelStore)
+            })
             .navigationBarTitle(Text("Fave Flicks"))
             .navigationBarItems(
                 leading:
@@ -33,11 +38,17 @@ struct MovieList: View {
                     }
                 },
                 trailing:
-                Button(action: { isPresented.toggle() }) {
-                    Image(systemName: "plus")
+                HStack {
+                    Button(action: { isLookAndFeelPresented.toggle() }) {
+                        Image(systemName: "gear")
+                    }
+                    Button(action: { isPresented.toggle() }) {
+                        Image(systemName: "plus")
+                    }
                 }
             )
         }
+        .accentColor(lookAndFeelStore.currentLookAndFeel.accentColor)
     }
 }
 

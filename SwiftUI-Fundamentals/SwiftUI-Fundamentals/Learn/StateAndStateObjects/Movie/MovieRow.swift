@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MovieRow: View {
+    @ObservedObject var lookAndFeelStore: LookAndFeelStore
     let movie: Movie
 
     var body: some View {
@@ -24,7 +25,7 @@ struct MovieRow: View {
             Spacer()
 
             VStack(alignment: .trailing) {
-                RatingView(rating: movie.rating)
+                RatingView(lookAndFeelStore: lookAndFeelStore, rating: movie.rating)
             }
         }
     }
