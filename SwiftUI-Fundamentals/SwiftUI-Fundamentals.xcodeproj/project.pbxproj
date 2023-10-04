@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57420A0D2ACDED7C00E27703 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A0C2ACDED7C00E27703 /* NavigationViews.swift */; };
+		57420A0F2ACDEDB400E27703 /* LocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A0E2ACDEDB400E27703 /* LocationMap.swift */; };
+		57420A122ACDEDD700E27703 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A112ACDEDD700E27703 /* DetailView.swift */; };
+		57420A142ACDEDFC00E27703 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A132ACDEDFC00E27703 /* Artwork.swift */; };
 		57F5CA432ACAF3FC0050C73C /* SwiftUI_FundamentalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA422ACAF3FC0050C73C /* SwiftUI_FundamentalsApp.swift */; };
 		57F5CA452ACAF3FC0050C73C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F5CA442ACAF3FC0050C73C /* ContentView.swift */; };
 		57F5CA472ACAF3FE0050C73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F5CA462ACAF3FE0050C73C /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57420A0C2ACDED7C00E27703 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
+		57420A0E2ACDEDB400E27703 /* LocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMap.swift; sourceTree = "<group>"; };
+		57420A112ACDEDD700E27703 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		57420A132ACDEDFC00E27703 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		57F5CA3F2ACAF3FC0050C73C /* SwiftUI-Fundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Fundamentals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F5CA422ACAF3FC0050C73C /* SwiftUI_FundamentalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_FundamentalsApp.swift; sourceTree = "<group>"; };
 		57F5CA442ACAF3FC0050C73C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +58,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57420A0B2ACDED6900E27703 /* NavigationViews */ = {
+			isa = PBXGroup;
+			children = (
+				57420A0C2ACDED7C00E27703 /* NavigationViews.swift */,
+				57420A0E2ACDEDB400E27703 /* LocationMap.swift */,
+				57420A112ACDEDD700E27703 /* DetailView.swift */,
+				57420A132ACDEDFC00E27703 /* Artwork.swift */,
+			);
+			path = NavigationViews;
+			sourceTree = "<group>";
+		};
 		57F5CA362ACAF3FC0050C73C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +120,7 @@
 		57F5CA552ACAFD110050C73C /* Learn */ = {
 			isa = PBXGroup;
 			children = (
+				57420A0B2ACDED6900E27703 /* NavigationViews */,
 				57F5CA562ACAFD310050C73C /* StateAndBinding.swift */,
 				57F5CA5A2ACB03490050C73C /* Stacks.swift */,
 				57F5CA5E2ACB0B650050C73C /* RepeatViewsForEachList */,
@@ -191,13 +211,17 @@
 				57F5CA642ACB112E0050C73C /* StacksChallenge.swift in Sources */,
 				57F5CA602ACB0B8C0050C73C /* MeowMix.swift in Sources */,
 				57F5CA572ACAFD310050C73C /* StateAndBinding.swift in Sources */,
+				57420A122ACDEDD700E27703 /* DetailView.swift in Sources */,
 				57F5CA452ACAF3FC0050C73C /* ContentView.swift in Sources */,
 				57F5CA5D2ACB0B420050C73C /* RepeatViewsForEachList.swift in Sources */,
 				57F5CA512ACAF6D20050C73C /* ModifiersChallenge1.swift in Sources */,
 				57F5CA432ACAF3FC0050C73C /* SwiftUI_FundamentalsApp.swift in Sources */,
 				57F5CA5B2ACB03490050C73C /* Stacks.swift in Sources */,
 				57F5CA542ACAF8000050C73C /* ModifiersChallenge2.swift in Sources */,
+				57420A142ACDEDFC00E27703 /* Artwork.swift in Sources */,
 				57F5CA592ACB00630050C73C /* StateAndBindingChallenge.swift in Sources */,
+				57420A0D2ACDED7C00E27703 /* NavigationViews.swift in Sources */,
+				57420A0F2ACDEDB400E27703 /* LocationMap.swift in Sources */,
 				57F5CA622ACB0BB50050C73C /* MeowMixHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
