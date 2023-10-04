@@ -11,10 +11,18 @@ struct NavigationViews: View {
     @State var artworks = artData
 
     var body: some View {
-        List(artworks) { artwork in
-            Text(artwork.title)
+        NavigationView {
+            List(artworks) { artwork in
+                NavigationLink {
+                    DetailView(artwork: artwork)
+                } label: {
+                    Text(artwork.title)
+                }
+            }
+            .navigationTitle("Artworks")
+            .listStyle(PlainListStyle())
+            DetailView(artwork: artworks[0])
         }
-        .listStyle(PlainListStyle())
     }
 }
 
