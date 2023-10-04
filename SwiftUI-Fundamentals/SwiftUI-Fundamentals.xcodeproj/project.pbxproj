@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		572252FA2ACDF21000807BE3 /* ModalViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572252F92ACDF21000807BE3 /* ModalViews.swift */; };
+		572252FC2ACDF47C00807BE3 /* NavigationAndBindingsChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572252FB2ACDF47C00807BE3 /* NavigationAndBindingsChallenge.swift */; };
 		57420A0D2ACDED7C00E27703 /* NavigationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A0C2ACDED7C00E27703 /* NavigationViews.swift */; };
 		57420A0F2ACDEDB400E27703 /* LocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A0E2ACDEDB400E27703 /* LocationMap.swift */; };
 		57420A122ACDEDD700E27703 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57420A112ACDEDD700E27703 /* DetailView.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		572252F92ACDF21000807BE3 /* ModalViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViews.swift; sourceTree = "<group>"; };
+		572252FB2ACDF47C00807BE3 /* NavigationAndBindingsChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAndBindingsChallenge.swift; sourceTree = "<group>"; };
 		57420A0C2ACDED7C00E27703 /* NavigationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViews.swift; sourceTree = "<group>"; };
 		57420A0E2ACDEDB400E27703 /* LocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMap.swift; sourceTree = "<group>"; };
 		57420A112ACDEDD700E27703 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				57F5CA532ACAF8000050C73C /* ModifiersChallenge2.swift */,
 				57F5CA582ACB00630050C73C /* StateAndBindingChallenge.swift */,
 				57F5CA632ACB112E0050C73C /* StacksChallenge.swift */,
+				572252FB2ACDF47C00807BE3 /* NavigationAndBindingsChallenge.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				57F5CA5B2ACB03490050C73C /* Stacks.swift in Sources */,
 				57F5CA542ACAF8000050C73C /* ModifiersChallenge2.swift in Sources */,
 				57420A142ACDEDFC00E27703 /* Artwork.swift in Sources */,
+				572252FC2ACDF47C00807BE3 /* NavigationAndBindingsChallenge.swift in Sources */,
 				57F5CA592ACB00630050C73C /* StateAndBindingChallenge.swift in Sources */,
 				57420A0D2ACDED7C00E27703 /* NavigationViews.swift in Sources */,
 				57420A0F2ACDEDB400E27703 /* LocationMap.swift in Sources */,
